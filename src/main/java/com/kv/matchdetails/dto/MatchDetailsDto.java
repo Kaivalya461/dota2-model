@@ -8,13 +8,14 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * <p>This Class is used to hold data coming from GetMatchDetails Steam Web API </p>
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class MatchDetailsDto {
-    private long match_sequence_num;
-
     public boolean radiant_win;
     public int duration;
     public int pre_game_duration;

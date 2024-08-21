@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * <p>This Class is used to hold data coming from GetMatchHistory Steam Web API </p>
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,5 +20,5 @@ public class MatchHistoryDto {
     private int num_results;
     private int total_results;
     private int results_remaining;
-    List<MatchesDto> matches;
+    private List<MatchesDto> matches;
 }
