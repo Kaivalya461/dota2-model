@@ -5,11 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serial;
+import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class PlayerDto {
+public class PlayerDto implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1222286674197430713L;
+
     private long account_id;
     private int player_slot;
     private int hero_id;

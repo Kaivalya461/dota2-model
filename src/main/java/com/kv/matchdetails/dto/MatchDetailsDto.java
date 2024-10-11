@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -15,7 +17,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class MatchDetailsDto {
+public class MatchDetailsDto implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 5336079868188287474L;
+
     public boolean radiant_win;
     public int duration;
     public int pre_game_duration;
